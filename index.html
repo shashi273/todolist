@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My to do list</title>
+    <link rel ="stylesheet" href="index.css">
+    <script src="index.js"> </script>
+
+
+
+</head>
+<body>
+
+<div id="myDIV" class="header">
+
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" placeholder="">
+    <span onclick="newElement()" class="addBtn">Add</span>
+    <div id="myDropdown" class="dropdown-content" >
+        <a href="#" >Select Category</a>
+        <a href="#" onclick="cat(this)" onclick="close()" id="first"  >Personal</a>
+        <a href="#" onclick="cat(this)" id="second" >Books To read</a>
+        <a href="#" onclick="cat(this)" id="third" >To Buy</a>
+    </div>
+</div>
+  
+  <div id="myUL" style="width:100%">
+    <table id="newrow">
+        <tr>
+            <th class="tab" id="tk">Task Name</th>
+            <th class="tab" id="cate">Category</th>
+            <th class="tab" id="cle">Remove</th>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
+
+  
